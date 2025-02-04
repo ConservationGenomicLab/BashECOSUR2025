@@ -49,14 +49,16 @@ Según su manifiesto, el objetivo fundacional del proyecto es construir un siste
 * **Software libre, eso quiere decir que además de ser gratuito también podemos acceder al código**.  
 El código abierto es el término que se ha adoptado para referirse al software desarrollado libremente. Es decir los programas son distribuidos con licencias que permiten su modificación, uso y redistribución del código fuente.  
 
-* **Enorme comunidad de desarrolladores de software, diversas distribuciones (e.g. Debian, Ubuntu)**. 
+**Enorme comunidad de desarrolladores de software, diversas distribuciones (e.g. Debian, Ubuntu)**. 
 El propósito de estas distribuciones es ofrecer GNU/Linux como un producto final para instalar o probar en un ordenador, cubriendo una gama de necesidades que van desde el uso cotidiano personal hasta aplicaciones muy específicas en ambientes especializados. Podría decirse que estas distribuciones hacen las veces de las diferentes e innumerables versiones de Windows. 
 
 
 ## 3. Interfaz de la línea de comandos de Linux <a name="paragraph3"></a>   
-##### **3.1 Conceptos importantes**
+
+##### **3.1 Conceptos importantes**  <a name="subparagraph3"></a> 
 
 ##### **¿Qué es un comando?** 
+
 Es una orden o instrucción que se ejecuta en el terminal y que ejecuta un programa con una funcionalidad determinada, dentro del sistema de directorios.    
 
 ##### **¿Qué es la interfaz de línea de comandos?**
@@ -72,32 +74,10 @@ Un shell es un programa que ejecuta comandos y genera resultados. Exiten varios 
 ##### **¿Qué es un script de Shell?**
 Es un archivo de texto que contiene una secuencia de comandos y que van a ser interpretados y ejecutados para obtener un resultado.
 
-##### **3.1 Instalar MobaXterm**  <a name="subparagraph3"></a>  ![MobaXterm](Figuras/Mobaxterm1.png)
+##### **3.2 Instalar MobaXterm**  <a name="subparagraph3"></a>  ![MobaXterm](Figuras/Mobaxterm1.png)
 
-##### 3.2 **Introducción a GitHub** <a name="subparagraph3"></a>    ![GitHub](Figuras/githubLogo.png){width='100px'}
+## 3.3 Cluster de supercómputo <a name="paragraph3"></a> 
 
-Los proyectos involucrados con Ciencia de Datos incluyen una colección de datos, código fuente/scrips, figuras, informes , etc, los cuáles sufren modificaciones durante el curso del proyecto.  
-
-> 
-**Git**  
-- Sistema de control de versiones, útil para grupos que trabajan proyectos colaborativos involucrados cómo desarrollo de software.   
-- Registra la evolución de un archivo a través del tiempo, e identificar los cambios hechos por cada colaborador.  
-- Para más información entra a [Happy Git with R](https://happygitwithr.com/).   
-
-**Github:**  
-- Host remoto en Internet, que  actúa como un canal de distribución para los proyectos administrados por Git.   
-- Permite compartir, almacenar y sincronizar proyectos entre los colaboradores de **manera remota**, para realizar lectura y edición de los archivos, a través de los llamados **repositorios**  
-  
-
-***Ventajas:***  
-* Flujos de trabajo ordenados  
-* Estructurar y administrar el historial de versiones  
-* Compartir proyectos para que prueben tu código   
-* Permitir que tus colegas revisen tus proyectos y realicen modificaciones en nuevas bifurcaciones   
-* Enviar sugerencias, cambios en el código al propietario  
-* Tener un backup de tus proyectos  
-
-## 3.3 Cluster de supercómputo <a name="paragraph2"></a>  
 Un cluster de supercómputo es una computadora de alto rendimiento que utiliza cientos/miles de nodos que trabajan en paralelo para resolver problemas complejos en conjunto.   
 Los nodos de supercómputo están optimizados con aceleradores que  intercambian e integran datos a velocidades que las máquinas comunes no pueden alcanzar.  
 
@@ -106,7 +86,10 @@ Los nodos de supercómputo están optimizados con aceleradores que  intercambian
  ![](Figuras/LANCAD.png)
  
   ![](Figuras/RECURSUS.png)
-***Acceso a super cómputo por protocolo SSH :***  
+ 
+
+## 3.4 Acceso a super cómputo por protocolo SSH <a name="paragraph3"></a>
+
 - SSH (Secure Shell) es un programa para entrar en una máquina remota y ejecutar comandos en esa máquina.
 - El protocolo SSH proporciona comunicaciones seguras y encriptadas entre dos hosts a través de una red insegura.    
 
@@ -125,7 +108,7 @@ usuario@sistema:~$ ssh -p 4020 user4@132.248.49.137
 
 ## 4. Pasos iniciales con la interfaz de la línea de comandos <a name="paragraph4"></a>  
 
-#### 4.1 El entorno de la terminal  <a name="subparagraph4"></a> 
+#### 4.1 El entorno de la terminal <a name="subparagraph4"></a> 
 
 * El entorno de la terminal: La pantalla de la terminal representa nuestro interprete de comando, así como lo observamos, está listo para empezar a recibir ordenes que posteriormente transformará en en resultados.  
 * Se llama prompt a los caracteres que se muestran en una línea de comandos para indicar que está a la espera de recibir órdenes.    
@@ -139,16 +122,39 @@ Al lado izquierdo del cursor (_) se observará siempre
 usuario@sistema:~$_  
 ~~~ 
 
-## 4.2 Descargar material del curso con ***git*** <a name="paragraph2"></a>  
+##### 4.2 Introducción a GitHub <a name="subparagraph4"></a>    ![GitHub](Figuras/githubLogo.png){width='100px'}
 
-~~~
+Los proyectos involucrados con Ciencia de Datos incluyen una colección de datos, código fuente/scrips, figuras, informes , etc, los cuáles sufren modificaciones durante el curso del proyecto.  
+
+
+**Git**  
+- Sistema de control de versiones, útil para grupos que trabajan proyectos colaborativos involucrados cómo desarrollo de software.   
+- Registra la evolución de un archivo a través del tiempo, e identificar los cambios hechos por cada colaborador.  
+- Para más información entra a [Happy Git with R](https://happygitwithr.com/). 
+
+![GitHub](Figuras/git_01.png)
+
+**Github:**  
+- Host remoto en Internet, que  actúa como un canal de distribución para los proyectos administrados por Git.   
+- Permite compartir, almacenar y sincronizar proyectos entre los colaboradores de **manera remota**, para realizar lectura y edición de los archivos, a través de los llamados **repositorios**  
+  
+
+***Ventajas:***  
+![GitHub](Figuras/git_02.png)
+
+## 4.3 Descargar material del curso con git <a name="subparagraph4"></a> 
+En tu sesión del cluster "/home/user1/" copia y pega lo siguiente:
+
+~~~   
 usuario@sistema:~$ git clone https://github.com/ConservationGenomicLab/BashECOSUR2025.git  
-~~~ 
-#### 4.3 Organización de directorios <a name="subparagraph4"></a> 
+~~~    
+
+#### 4.4 Organización de directorios <a name="subparagraph4"></a> 
 
 El sistema de archivos de GNU/Linux tiene una estructura jerárquica de directorios y subdirectorios que dependen del directorio raíz.  
 Se puede imprimir la estructura de directorios de tu home u otro directorio: 
 
+![](Figuras/ubicaciones.png) 
 
 ```{bash}
 tree  -L 2
@@ -180,7 +186,7 @@ usuario@sistema:~$ man pwd
 usuario@sistema:~$ pwd --help    
 ~~~  
 
-#### 4.4 Aprendiendo a usar comandos <a name="subparagraph4"></a> 
+#### 4.5 Aprendiendo a usar comandos <a name="subparagraph4"></a> 
 Los comandos algunas veces necesitan parámetros (opciones y/o argumentos) para establecer opciones específicas.  
 a. **¿Qué son las opciones:** Indican sobre qué directorio o archivo hay que ejecutar el programa indicado. Se escribe seguido del comando. Generalmente es una letra precedida por un guion.  
 b. **¿Qué es un argumento?** Es una indicación sobre qué directorio o archivo hay que ejecutar el programa indicado. Generalmente se pone después del comando y las opciones.
@@ -221,14 +227,14 @@ a. usuario@sistema:~$ ls /home/ -l
 b. usuario@sistema:~$ ls -l /home/  
 ~~~    
 
-#### 4.5 Resumen <a name="subparagraph4"></a>   
+#### 4.6 Resumen <a name="subparagraph4"></a>   
 * El intérprete de comandos espera que le indiquemos una línea de órdenes para ejecutar la tarea que le hayamos indicado.  
 * La sintaxis básica de una orden es **COMANDO [PARÁMETROS] [OPCIONES]** .  
 * Con el comando le indico qué tiene que hacer, en las opciones cómo debe hacerlo y con los parámetros le indico los elementos donde tendrá que realizar la acción.  
 * Para diferenciar entre las partes de una línea de órdenes se utilizan los espacios.  
 * Puedo obtener ayuda de cualquier comando usando **man/ -- help** nombre_del_comando.  
 
-#### 4.6 Primer quiz  <a name="subparagraph4"></a> 
+#### 4.7 Primer quiz  <a name="subparagraph4"></a> 
 
 1. ¿Qué comando nos indica el directorio desde el que estamos ejecutando la orden?
 a. pwd
@@ -258,7 +264,7 @@ c. Obligatoriamente de ponen al final de la línea de comandos
 
 6. ¿Cuáles caracteres se deben evitar usar en los nombres de los archivos y por qué?  
 
-#### 4.7 Práctica 1  <a name="subparagraph4"></a> 
+#### 4.8 Práctica 1  <a name="subparagraph4"></a> 
 
 - Ejecutar en la terminal las tareas:  
 - Mostrar el directorio actual.
